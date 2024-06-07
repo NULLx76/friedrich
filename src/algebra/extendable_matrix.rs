@@ -11,6 +11,7 @@ use nalgebra::{storage::Storage, Dynamic, U1};
 // MATRIX
 
 /// a matrix that can grow to add additional rows efficiently
+#[derive(Debug, Clone)]
 #[cfg_attr(feature = "friedrich_serde", derive(serde::Deserialize, serde::Serialize))]
 pub struct EMatrix
 {
@@ -59,6 +60,7 @@ impl EMatrix
 // VECTOR
 
 /// A vector that can grow to add additional entries efficiently.
+#[derive(Debug, Clone)]
 #[cfg_attr(feature = "friedrich_serde", derive(serde::Deserialize, serde::Serialize))]
 pub struct EVector
 {
